@@ -1,1 +1,244 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Passion+One:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Passion+One:wght@400;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    color: rgb(36, 46, 59);
+}
+
+.navbar-brand {
+    width: 180px;
+    padding: 0;
+    line-height: 1;
+
+    img {
+        width: 100%;
+    }
+}
+
+.navbar-toggler {
+    padding: 0;
+    border: 0;
+    opacity: 1;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        background-color: #eceef2;
+    }
+}
+
+
+.nav-link {
+    letter-spacing: 0.5px;
+    margin-right: 32px;
+    font-size: 20px;
+    color: #00316d !important;
+    font-family: "Passion One", serif;
+
+    @media (max-width: 991px) {
+        letter-spacing: 0.5px;
+        margin-right: 0;
+        text-align: center;
+        background-color: #eceef2;
+    }
+}
+
+.nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: #00316d !important;
+    font-family: "Passion One", serif;
+    font-size: 20px;
+}
+
+nav.navbar {
+    border-bottom: 1px solid #d7dbe1;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14),
+        0 0 0 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.sub-header {
+    border-bottom: 1px solid #d7dbe1;
+    padding: 8px 0;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14),
+        0 0 0 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.banner-sec {
+    overflow: hidden;
+
+    .bnr-row {
+        background-color: rgb(235, 238, 242);
+
+        .content-col {
+            @media (min-width: 1280px) {
+                flex: 0 0 auto;
+                width: 26.66667%;
+            }
+
+
+            .bnr-text {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100%;
+                padding: 24px;
+
+                h1 {
+                    color: rgb(36, 46, 59);
+                    font-family: "Barlow", sans-serif;
+                    font-size: 32px;
+                    font-stretch: condensed;
+                    font-weight: 700;
+                    font-style: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    margin-bottom: 10px;
+                }
+
+                h2 {
+                    line-height: 1;
+                    color: #242e3b;
+                    font-family: "Passion One", serif;
+                    font-size: 48px;
+                    font-weight: 400;
+                    font-stretch: normal;
+                    font-style: normal;
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding: 0px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-family: "Barlow", sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.75;
+                    color: unset;
+                    margin-bottom: 15px;
+                }
+
+                .primary-btn {
+                    font-weight: 400;
+                    line-height: 1;
+                    letter-spacing: 0.5px;
+                    font-family: "Passion One", serif;
+                    background: #e51c24;
+                    height: 36px !important;
+                    font-size: 1.125rem;
+                    text-transform: uppercase;
+                    color: #fff;
+                    opacity: 1;
+                    padding: 5px 30px;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: -webkit-max-content;
+                    width: -moz-max-content;
+                    width: max-content;
+                }
+            }
+        }
+
+    }
+
+
+    .img-col {
+        @media (min-width: 1280px) {
+            flex: 0 0 auto;
+            width: 73.33333%;
+        }
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+        }
+    }
+}
+
+footer {
+    padding: 40px 0;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .2), 0 0 0 0 rgba(0, 0, 0, .14), 0 0 0 0 rgba(0, 0, 0, .12);
+    background-color: #00316d;
+
+    h3 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-family: "Passion One", serif;
+        margin-bottom: 24px;
+        letter-spacing: .5px;
+    }
+
+    .quick-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        a {
+            font-family: "Barlow", sans-serif;
+            font-size: small;
+            text-decoration: none;
+            margin-bottom: 16px;
+            display: block;
+            line-height: 1.25;
+            letter-spacing: normal;
+            color: #ffffff;
+            font-weight: 500;
+        }
+    }
+
+    .social-links {
+        list-style: none;
+        padding: 0;
+        margin: 0 0;
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-right: 24px;
+
+            a {
+                text-decoration: none;
+
+                img {
+                    width: 24px;
+                }
+            }
+        }
+    }
+
+    .copy-right-text {
+        line-height: 1.5;
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0;
+        font-family: 'Barlow';
+    }
+
+}
